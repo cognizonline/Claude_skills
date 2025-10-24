@@ -97,8 +97,11 @@ These include: memory-account-briefing, memory-customer-onboarding, memory-proje
 ### Prerequisites
 
 - **Claude Access**: Claude Code, Claude.ai Pro/Team/Enterprise, or Claude API
+- **Cogniz Account**: Sign up at [cogniz.online](https://cogniz.online) (free tier available)
+- **API Key**: Generated from your Cogniz dashboard
 - **Python 3.8+**: For helper scripts (optional)
-- **Cogniz Memory Platform**: Active account with API access ([sign up free](https://cogniz.online))
+
+**Note**: You DON'T need to install WordPress or host anything - Cogniz is a hosted SaaS platform.
 
 ### Installation
 
@@ -141,37 +144,53 @@ response = client.messages.create(
 )
 ```
 
-See [INSTALLATION.md](INSTALLATION.md) for detailed setup instructions.
+**Quick Start for Customers**: See [CUSTOMER_SETUP_GUIDE.md](CUSTOMER_SETUP_GUIDE.md) - 5-minute setup!
+
+See [INSTALLATION.md](INSTALLATION.md) for detailed technical documentation.
 
 ---
 
 ## Configuration
 
-### Cogniz Memory Platform Setup
+### Cogniz Platform Setup (SaaS)
 
-1. **Get API Credentials**
-   - Sign up at [cogniz.online](https://cogniz.online)
-   - Navigate to Settings → API Keys
-   - Generate a new API key
+**Cogniz is a hosted service - you don't install anything!**
 
-2. **Create Configuration File**
+1. **Sign Up**
+   - Visit [cogniz.online](https://cogniz.online)
+   - Create your account (free tier available)
+   - Choose a plan
+
+2. **Get Your API Key**
+   - Log in to your dashboard
+   - Navigate to **API Keys**
+   - Click **Generate New Key**
+   - Copy and save securely
+
+3. **Create Configuration File**
+
+Create `~/.cogniz/config.json` (Linux/Mac) or `C:\Users\YourName\.cogniz\config.json` (Windows):
 
 ```json
-// Save as ~/.cogniz/config.json (Linux/Mac) or C:\Users\YourName\.cogniz\config.json (Windows)
 {
-  "base_url": "https://api.cogniz.online",
-  "api_key": "your-api-key-here",
-  "project_id": "your-project-id",
+  "base_url": "https://cogniz.online",
+  "api_key": "mp_live_YOUR_KEY_HERE",
+  "project_id": "default",
   "project_name": "My Project"
 }
 ```
 
-3. **Verify Setup**
+**Important**: Use `https://cogniz.online` as the base_url (not localhost or your own domain).
+
+4. **Verify Setup**
 
 ```bash
-# Test connection (requires cogniz-memory-manager-local)
-python -m memory_api --config ~/.cogniz/config.json list --limit 5
+# Test connection to Cogniz hosted platform
+cd Claude_skills/cogniz-memory-manager-local/scripts
+python memory_api.py --config ~/.cogniz/config.json list --limit 5
 ```
+
+**See [CUSTOMER_SETUP_GUIDE.md](CUSTOMER_SETUP_GUIDE.md) for step-by-step instructions with screenshots.**
 
 ---
 
