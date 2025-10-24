@@ -26,6 +26,34 @@ Claude Skills are modular capabilities that you can add to Claude (via Claude Co
 
 ---
 
+## Implementation Status
+
+**Important**: These skills vary in implementation completeness:
+
+### ✅ Fully Implemented (Working Code)
+- **memory-optimizer** - Complete algorithms for compression and metadata standardization
+- **usage-analytics** - Framework with data structures (requires database connection)
+- **memory-context-economizer** - Workflow guidance (no code required)
+
+### 📋 Workflow Templates (Requires Cogniz API)
+Most `memory-*` skills are workflow guides that:
+- Teach Claude how to structure outputs
+- Provide scripts that wrap Cogniz Memory Platform API calls
+- Include templates and reference documentation
+- Require active Cogniz account and API access to function
+
+These include: memory-account-briefing, memory-customer-onboarding, memory-project-handoff, memory-quarterly-review, memory-revenue-forecast, memory-sales-ops-analytics, memory-compliance-auditor, memory-personal-journal, memory-learning-tracker, memory-idea-vault
+
+### ⚠️ Documentation Only (Implementation Pending)
+- **revenue-calculator** - SKILL.md exists, but no Python implementation yet
+
+**Use Case**: These skills are most valuable when you have:
+1. An active [Cogniz Memory Platform](https://cogniz.online) account
+2. Stored memories/data to analyze
+3. Need structured workflows for common business tasks
+
+---
+
 ## Skills Portfolio
 
 ### 📊 Business Intelligence (5 Skills)
@@ -353,36 +381,32 @@ Each skill follows Anthropic's standard structure:
 ### Community
 - **GitHub Issues**: [Report bugs or request features](https://github.com/cognizonline/Claude_skills/issues)
 - **Discussions**: [Ask questions and share feedback](https://github.com/cognizonline/Claude_skills/discussions)
-- **Discord**: [Join our community](https://discord.gg/cogniz) (coming soon)
 
 ### Professional Support
 For enterprise support, custom skill development, or training:
 - **Email**: support@cogniz.online
-- **Website**: [cogniz.online/enterprise](https://cogniz.online/enterprise)
+- **Website**: [cogniz.online](https://cogniz.online)
 
 ---
 
 ## Roadmap
 
 ### Version 2.1 (Q4 2025)
+- [ ] Complete revenue-calculator implementation
 - [ ] Add document export skills (PDF, DOCX, PPTX)
-- [ ] Create Salesforce integration skill
-- [ ] Build Slack bot integration skill
-- [ ] Add beginner onboarding wizard skill
+- [ ] Expand usage-analytics with more data sources
+- [ ] Add unit tests for all Python modules
 
 ### Version 2.2 (Q1 2026)
-- [ ] Notion database sync skill
-- [ ] Advanced analytics dashboard skill
+- [ ] Create integration skills (Salesforce, Slack, Notion)
+- [ ] Add beginner onboarding wizard skill
 - [ ] Multi-language support
-- [ ] Claude Desktop native support
+- [ ] Enhanced documentation with video tutorials
 
 ### Version 3.0 (Q2 2026)
 - [ ] Team collaboration features
-- [ ] Role-based access controls
+- [ ] Advanced analytics dashboard
 - [ ] Skill marketplace integration
-- [ ] Mobile app support
-
-[View full roadmap](https://github.com/cognizonline/Claude_skills/projects)
 
 ---
 
@@ -435,4 +459,4 @@ See [LICENSE](LICENSE) for the full license text.
 
 **Built with ❤️ by the Cogniz team**
 
-[Website](https://cogniz.online) • [Documentation](https://docs.cogniz.online) • [Blog](https://cogniz.online/blog) • [Twitter](https://twitter.com/cognizonline)
+[Website](https://cogniz.online) • [GitHub](https://github.com/cognizonline)
