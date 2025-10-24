@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
+**/__pycache__/
+**/*.pyc
 .Python
 build/
 develop-eggs/
@@ -96,3 +98,11 @@ dmypy.json
 # Documentation builds
 docs/_build/
 site/
+
+# Internal development files (DO NOT COMMIT)
+**/DEPLOYMENT*.md
+**/HONEST*.md
+**/BREAKTHROUGH*.md
+**/CRITICAL*.md
+**/STATUS*.md
+**/STRATEGY*.md
