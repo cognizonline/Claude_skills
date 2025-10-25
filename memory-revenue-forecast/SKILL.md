@@ -1,7 +1,6 @@
 ---
 name: memory-revenue-forecast
 description: Forecast MRR, ARR, churn, and growth scenarios using Cogniz memory data plus structured projection workflows.
-version: 1.1.0
 ---
 
 # Memory Revenue Forecast

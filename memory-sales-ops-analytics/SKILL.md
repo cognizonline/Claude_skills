@@ -1,7 +1,6 @@
 ---
 name: memory-sales-ops-analytics
 description: Analyze sales pipeline, deal notes, and usage signals stored in Cogniz to produce actionable sales operations insights.
-version: 1.1.0
 ---
 
 # Memory Sales Ops Analytics

@@ -1,7 +1,6 @@
 ---
 name: memory-learning-tracker
 description: Track learning goals, organize notes, and schedule revisits using Cogniz memories and spaced repetition prompts.
-version: 1.1.0
 ---
 
 # Memory Learning Tracker

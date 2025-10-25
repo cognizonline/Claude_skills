@@ -1,7 +1,6 @@
 ---
 name: memory-quarterly-review
 description: Assemble quarterly business reviews by mining Cogniz memories for goals, metrics, highlights, and risks.
-version: 1.1.0
 ---
 
 # Memory Quarterly Review

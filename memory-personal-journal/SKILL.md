@@ -1,7 +1,6 @@
 ---
 name: memory-personal-journal
 description: Capture and compress daily reflections, highlights, and follow-ups using the Cogniz Memory Platform.
-version: 1.1.0
 ---
 
 # Memory Personal Journal

@@ -1,7 +1,6 @@
 ---
 name: memory-idea-vault
 description: Maintain a searchable archive of creative ideas, experiments, and inspiration using Cogniz memories with smart tagging.
-version: 1.1.0
 ---
 
 # Memory Idea Vault

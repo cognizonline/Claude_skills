@@ -1,7 +1,6 @@
 ---
 name: memory-compliance-auditor
 description: Audit Cogniz memories for policy alignment, sensitive data exposure, and regulatory compliance issues.
-version: 1.1.0
 ---
 
 # Memory Compliance Auditor

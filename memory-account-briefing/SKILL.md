@@ -1,7 +1,6 @@
 ---
 name: memory-account-briefing
 description: Build executive account briefings by combining Cogniz memories, revenue metrics, and usage analytics for high-priority customers.
-version: 1.1.0
 ---
 
 # Memory Account Briefing

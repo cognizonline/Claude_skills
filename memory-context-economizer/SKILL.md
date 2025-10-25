@@ -1,7 +1,6 @@
 ---
 name: memory-context-economizer
 description: Teach Claude Code workflows that minimize context usage while preserving output quality in VS Code CLI sessions.
-version: 1.0.0
 ---
 
 # Memory Context Economizer

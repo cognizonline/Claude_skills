@@ -1,7 +1,6 @@
 ---
 name: memory-customer-onboarding
 description: Guide new customer onboarding by reusing Cogniz memories from past implementations and logging fresh milestones.
-version: 1.1.0
 ---
 
 # Memory Customer Onboarding

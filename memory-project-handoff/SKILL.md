@@ -1,7 +1,6 @@
 ---
 name: memory-project-handoff
 description: Capture and transfer project context, decisions, and next steps when handing work between teams or sessions.
-version: 1.1.0
 ---
 
 # Memory Project Handoff
